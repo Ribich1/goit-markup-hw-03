@@ -1,0 +1,176 @@
+/* body {
+  background-color: #47ff94;
+} */
+:root {
+  /* Fonts */
+
+  /* Text colors */
+  --main-txt-cl: #434455;
+  --accent-txt-cl: #2e2f42;
+  --subtle-txt-cl: #8e8f99;
+  --light-txt-cl: #f4f4fd;
+  --modal-txt-cl: #2e2f42;
+  --hero-txt-cl: #2e2f42;
+  --brand-txt-cl: #4d5ae5;
+  --pressed-txt-cl: #404bbf;
+  --dark-txt-cl: #2e2f42;
+  --btn-txt-cl: #ffffff;
+  --link-txt-cl: #2e2f42;
+  --hero-txt-cl: #ffffff;
+  --footer-txt-cl: #e7e9fc;
+
+  --access: #31d0aa;
+  --access-75: rgba(49, 208, 170, 0.75);
+  --access-50: rgba(49, 208, 170, 0.5);
+  --access-10: rgba(49, 208, 170, 0.1);
+
+  /* Backgrounds colors */
+  --main-bg-cl: #434455;
+  --accent-bg-cl: #2e2f42;
+  --subtle-bg-cl: #8e8f99;
+  --light-bg-cl: #f4f4fd;
+  --modal-bg-cl: #2e2f42;
+  --hero-bg-cl: #2e2f42;
+  --brand-bg-cl: #4d5ae5;
+  --pressed-bg-cl: #404bbf;
+  --dark-bg-cl: #2e2f42;
+
+  /* others */
+}
+
+body {
+  color: var(--main-txt-cl);
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+nav .current {
+  color: var(--pressed-txt-cl);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--dark-txt-cl);
+}
+
+/* h1 */
+.main-title {
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--hero-txt-cl);
+
+  background-color: black;
+  /*временно подсветил */
+}
+/* h2 */
+.title {
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+/* h3 */
+.title-item {
+  font-weight: 500;
+  font-size: 20px;
+  /* line-height: 1.2; */
+  /* letter-spacing: 0.02em; */
+
+  /* font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px; */
+
+  letter-spacing: 0.02em;
+}
+
+/* p */
+.item {
+  /* font-weight: 400; */
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-txt-cl);
+}
+.item-footer {
+  color: var(--footer-txt-cl);
+}
+
+.link {
+  text-decoration: none;
+  color: var(--link-txt-cl);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.link:hover,
+.link:focus,
+.link.contacts:hover,
+.link.contacts:focus {
+  color: var(--pressed-txt-cl);
+}
+.contacts {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.btn {
+  color: var(--btn-txt-cl);
+  background-color: var(--brand-bg-cl);
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+.btn.primary {
+  background-color: var(--brand-bg-cl);
+}
+.btn.secondary {
+  background-color: var(--pressed-bg-cl);
+}
+.btn:hover,
+.btn:focus {
+  background-color: var(--pressed-bg-cl);
+  color: var(--light-txt-cl);
+}
+.btn-light {
+  background-color: var(--light-bg-cl);
+  color: var(--brand-txt-cl);
+}
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  /* IRIS */
+
+  color: var(--brand-txt-cl);
+}
+.span-light {
+  color: var(--light-txt-cl);
+  /* background-color: darkblue; */
+}
+.span-dark {
+  color: var(--modal-txt-cl);
+}
+.list {
+  list-style-type: none;
+}
