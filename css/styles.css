@@ -44,6 +44,19 @@ body {
   letter-spacing: 0.02em;
 }
 
+.hero {
+  text-align: center;
+}
+.container {
+  width: 1128px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 1px dashed tomato;
+}
+.page-header {
+  background-color: #ccc;
+}
+
 nav .current {
   color: var(--pressed-txt-cl);
 }
@@ -58,6 +71,8 @@ h6 {
 
 /* h1 */
 .main-title {
+  margin-top: 0;
+  margin-bottom: 48px;
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
@@ -173,4 +188,6 @@ line-height: 24px; */
 }
 .list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
