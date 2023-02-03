@@ -48,6 +48,12 @@ body {
   margin-right: auto;
 }
 
+.page-header {
+  height: 72px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
 .hero {
   text-align: center;
   outline: 1px dashed tomato;
@@ -58,8 +64,6 @@ body {
   padding-right: 15px;
   margin: 0 auto;
   outline: 1px solid tomato;
-}
-.page-header {
 }
 
 nav .current {
@@ -233,6 +237,7 @@ line-height: 24px; */
 }
 .site-nav {
   display: flex;
+  margin-left: 76px;
 }
 .site-nav li {
   outline: 1px solid tomato;
@@ -248,6 +253,18 @@ line-height: 24px; */
 }
 .auth-nav.item + .item {
   margin-left: 40px;
+}
+.nav-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrap-logo {
+  display: flex;
+  align-items: center;
+}
+.wrap-logo:first-child {
+  /* margin-left: 156px; */
 }
 .list p {
   margin-top: 0;
