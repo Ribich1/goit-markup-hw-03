@@ -36,6 +36,8 @@
   --dark-bg-cl: #2e2f42;
 
   /* others */
+  --indent: 24px;
+  --items: 4;
 }
 
 body {
@@ -59,7 +61,7 @@ body {
   outline: 1px dashed tomato;
 }
 .container {
-  width: 1128px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -85,7 +87,7 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
-.section.no-margin {
+.section .no-margin {
   margin-bottom: 0;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -94,7 +96,7 @@ h6 {
   background-color: #8e8f99;
 }
 .section-mini {
-  width: 1128px;
+  width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto 120px;
@@ -273,4 +275,45 @@ line-height: 24px; */
 .container.footer {
   margin-left: 156px;
   outline: 1px green solid;
+}
+.principles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.principles .item {
+  width: 264px;
+}
+
+.section-mini .item {
+  /* --items: 5; */
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.card-item {
+  width: calc((100% - (var(--indent) * (var(--items)-1))) / var(--items));
+}
+/* img {
+  display: inline;
+  max-width: 100%;
+  height: auto;
+} */
+
+.example {
+  display: flex;
+  gap: 24px;
+}
+.example .item {
+  width: 360px;
+}
+.team {
+  display: flex;
+  gap: 24px;
+}
+.team-item {
+  width: 264px;
 }
