@@ -37,9 +37,11 @@
 
   /* others */
   --indent: 24px;
-  --items: 4;
+  --items: 5;
 }
-
+.btn-total {
+  padding: 0;
+}
 body {
   color: var(--main-txt-cl);
   font-family: "Roboto", sans-serif;
@@ -196,6 +198,23 @@ line-height: 24px; */
   line-height: 1.5;
   letter-spacing: 0.04em;
 }
+.btn-filter {
+  min-width: 69px;
+  min-height: 48px;
+
+  padding: 12px 24px;
+
+  color: var(--btn-txt-cl);
+  background-color: var(--brand-bg-cl);
+
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: none;
+}
 .btn.primary {
   background-color: var(--brand-bg-cl);
 }
@@ -288,11 +307,11 @@ line-height: 24px; */
 .section-mini .item {
   /* --items: 5; */
 }
-
+/* сетка */
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: var(--indent);
 }
 .card-item {
   width: calc((100% - (var(--indent) * (var(--items)-1))) / var(--items));
@@ -316,4 +335,28 @@ line-height: 24px; */
 }
 .team-item {
   width: 264px;
+}
+.filter-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
+  padding-top: 0;
+}
+.filter {
+  width: 586px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 96px;
+  margin-bottom: 72px;
+  outline: 1px solid red;
+}
+.filter .item {
+  outline: 1px solid green;
+
+  /* height: 48px; */
+  /* text-align: center; */
 }

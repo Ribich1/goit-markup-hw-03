@@ -24,7 +24,7 @@
 
     <!-- header шапка -->
 
-    <header>
+    <!-- <header>
         <nav>
             <a class="logo" href="./index.html">
                 Web<span class="span-dark">Studio</span>
@@ -41,98 +41,128 @@
                 <li><a class="link contacts" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
+    </header> -->
+
+    <header class="page-header">
+        <div class="container nav-cont">
+            <nav>
+                <div class="wrap-logo">
+                    <a class="logo" href="./index.html">
+                        Web<span class="span-dark">Studio</span>
+                    </a>
+
+                    <ul class="site-nav list">
+                        <li class="item"><a class="link current" href="./index.html">Studio</a></li>
+                        <li class="item"><a class="link" href="./portfolio.html">Portfolio</a></li>
+                        <li class="item"><a class="link" href="">Contacts</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <address>
+                <ul class="auth-nav list">
+                    <li class="item"><a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="item"><a class="link contacts" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+
+            </address>
+
+        </div>
     </header>
 
     <main>
         <!-- filters -->
-        <section>
-            <h1 class="main-title" hidden> filters our projects</h1>
+        <section class="section">
 
-
-            <ul class="list">
-                <li><button class="btn btn-light" type="button">All</button></li>
-                <li><button class="btn btn-light" type="button">Web Site </button></li>
-                <li><button class="btn btn-light" type="button">App</button></li>
-                <li><button class="btn btn-light" type="button">Design</button></li>
-                <li><button class="btn btn-light" type="button">Marketing</button></li>
-            </ul>
-
-
-
-
-            <!-- row1 -->
-            <ul class="list">
-
-                <li>
-                    <a class="link" href="">
-                        <img src="./images/portfolio/row1/img.jpg" alt="bank app" width="360" height="360">
-                        <h2 class="title-item">Banking App Interface Concept</h2>
-                        <p class="item">App</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="">
-                        <img src="./images/portfolio/row1/img1.jpg" alt="Cashless" width="360" height="360">
-                        <h2 class="title-item">Cashless Payment</h2>
-                        <p class="item">Marketing</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="">
-                        <img src="./images/portfolio/row1/img2.jpg" alt="Mediation App" width="360" height="360">
-                        <h2 class="title-item">Meditaion App</h2>
-                        <p class="item">App</p>
-                    </a>
-                </li>
-
-                <!-- row2 -->
-
-                <li>
-                    <a class="link" href="">
-                        <img src="./images/portfolio/row2/img.jpg" alt="Taxi" width="360" height="360">
-                        <h2 class="title-item">Taxi Service</h2>
-                        <p class="item">Marketing</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="">
-                        <img src="./images/portfolio/row2/img1.jpg" alt="Screen" width="360" height="360">
-                        <h2 class="title-item">Screen Illustrations</h2>
-                        <p class="item">Design</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="">
-                        <img src="./images/portfolio/row2/img2.jpg" alt="Online" width="360" height="360">
-                        <h2 class="title-item">Online Courses</h2>
-                        <p class="item">Marketing</p>
-                    </a>
-                </li>
-
-                <!-- row3 -->
-
-                <li>
-                    <a class="link" href="">
-                        <img src="./images/portfolio/row3/img2.jpg" alt="instagram" width="360" height="360">
-                        <h2>Instagram Stories Concept</h2>
-                        <p class="item">Design</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="">
-                        <img src="./images/portfolio/row3/img1.jpg" alt="organic food" width="360" height="360">
-                        <h2 class="title-item">Organic Food</h2>
-                        <p class="item">Web Site</p>
-                    </a>
-                </li>
-                <li>
-                    <a class="link" href="">
-                        <img src="./images/portfolio/row3/img.jpg" alt="Fresh Coffee" width="360" height="360">
-                        <h2 class="title-item">Fresh Coffee</h2>
-                        <p class="item">Web Site</p>
-                    </a>
-                </li>
-            </ul>
+            <div class="filter">
+                <!-- <h1 class="main-title" hidden> filters our projects</h1> -->
+                <ul class="list filter-set">
+                    <li class="filter-item item"><button class="btn-total btn-light btn-filter"
+                            type="button">All</button></li>
+                    <li class="filter-item item"><button class="btn-total btn-light btn-filter" type="button">Web
+                            Site</button>
+                    </li>
+                    <li class="filter-item item"><button class="btn-total btn-light btn-filter" type="button"> App
+                        </button></li>
+                    <li class="filter-item item"><button class="btn-total btn-light btn-filter" type="button"> Design
+                        </button>
+                    </li>
+                    <li class="filter-item item"><button class="btn-total btn-light btn-filter" type="button"> Marketing
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="container">
+                <!-- row1 -->
+                <ul class="list">
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/row1/img.jpg" alt="bank app" width="360" height="360">
+                            <h2 class="title-item">Banking App Interface Concept</h2>
+                            <p class="item">App</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/row1/img1.jpg" alt="Cashless" width="360" height="360">
+                            <h2 class="title-item">Cashless Payment</h2>
+                            <p class="item">Marketing</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/row1/img2.jpg" alt="Mediation App" width="360" height="360">
+                            <h2 class="title-item">Meditaion App</h2>
+                            <p class="item">App</p>
+                        </a>
+                    </li>
+                    <!-- row2 -->
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/row2/img.jpg" alt="Taxi" width="360" height="360">
+                            <h2 class="title-item">Taxi Service</h2>
+                            <p class="item">Marketing</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/row2/img1.jpg" alt="Screen" width="360" height="360">
+                            <h2 class="title-item">Screen Illustrations</h2>
+                            <p class="item">Design</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/row2/img2.jpg" alt="Online" width="360" height="360">
+                            <h2 class="title-item">Online Courses</h2>
+                            <p class="item">Marketing</p>
+                        </a>
+                    </li>
+                    <!-- row3 -->
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/row3/img2.jpg" alt="instagram" width="360" height="360">
+                            <h2>Instagram Stories Concept</h2>
+                            <p class="item">Design</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/row3/img1.jpg" alt="organic food" width="360" height="360">
+                            <h2 class="title-item">Organic Food</h2>
+                            <p class="item">Web Site</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="link" href="">
+                            <img src="./images/portfolio/row3/img.jpg" alt="Fresh Coffee" width="360" height="360">
+                            <h2 class="title-item">Fresh Coffee</h2>
+                            <p class="item">Web Site</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </section>
 
 
