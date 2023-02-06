@@ -92,6 +92,9 @@ h6 {
   padding-top: 120px;
   padding-bottom: 120px;
 }
+.section.works {
+  padding-top: 0;
+}
 .section .portfolio {
   padding-top: 120px;
 }
@@ -257,6 +260,9 @@ line-height: 24px; */
   color: var(--brand-txt-cl);
 }
 .logo {
+  display: block;
+  margin-bottom: 16px;
+
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
